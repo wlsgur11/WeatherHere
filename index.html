@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Information</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>지금 날씨 어때</header>
+  <nav>
+    <ul>
+      <li><a href="#current-weather">현재 위치 날씨</a></li>
+      <li><a href="#weather-by-city" id="city-weather-menu">도시별 날씨 조회</a></li>
+      <li><a href="#popular-searches" id="popular-search-menu">인기 검색어</a></li>
+      <li><a href="#name-to-age" id="name-to-age-menu">이름 나이 추측</a></li>
+    </ul>
+  </nav>
+  
+  <main>
+    <section id="current-weather">
+      <!-- 현재 위치 날씨 정보 구현 부분 -->
+      <button id="get-location-weather">내 위치 날씨 조회</button>
+      <div id="weatherInfo"></div>
+    </section>
+
+    <section id="weather-by-city"  style="display: none;">
+      <!-- 도시별 날씨 정보 조회 구현 부분 -->
+      <form id="city-search-form">
+        <input type="text" name="input_text1" placeholder="도시 이름 입력   ex) seoul, jeju island...">
+        <button type="submit">도시 날씨 조회</button>
+      </form>
+    </section>
+
+    <section id="popular-searches" style="display: none;">
+      <!-- 인기 검색어 목록 구현 부분 -->
+      <table id="popular-search-table">
+        <thead>
+          <tr>
+            <th>인기 검색어</th>
+          </tr>
+        </thead>
+        <tbody>
+          <!-- 인기 검색어 내용 삽입 -->
+        </tbody>
+      </table>
+    </section>
+    <section id="name-to-age" style="display: none">
+      <!-- 이름으로 나이 추측 구현 부분 -->
+      <form id="name-to-age-form">
+        <input type="text" name="input_text2" placeholder="이름을 입력하세요  (성을 제외한 이름을 영어로 입력해주세요)">
+        <button type="submit">나이 추측</button>
+      </form>
+      <div id="nameToAgeResult"></div>
+    </section>
+    
+  </main>
+  
+  <footer>
+    &copy; 2023 문진혁 Weather Info. All rights reserved.
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

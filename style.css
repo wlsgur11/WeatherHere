@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  body {
+    background: #f3f3f3;
+    color: #333;
+  }
+  
+  header {
+    font-size: xx-large;
+    font-weight: bolder;
+    background: #4d4dff;
+    padding: 1.5rem;
+    color: #fff;
+    text-align: center;
+  }
+  
+  nav {
+    background: #333;
+    padding: 1rem;
+  }
+  
+  nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+  }
+  
+  nav ul li {
+    margin: 0 1rem;
+  }
+  
+  nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: large;
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  main {
+    max-width: 900px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+  }
+  
+  section:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+  
+  section button,
+  section input[type="text"] {
+    font-size: 1rem;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: 1px solid #999;
+  }
+  
+  section input[type="text"] {
+    width: 80%;
+  }
+  
+  section button {
+    background: #4d4dff;
+    color: #fff;
+    border-color: #4d4dff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  section button:hover {
+    background: #3c3ce6;
+  }
+  
+  section div,
+  section table {
+    font-size: 0.9rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 5px;
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+  }
+  
+  table {
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+  }
+  
+  table thead th {
+    background: #4d4dff;
+    color: #fff;
+    font-weight: normal;
+    padding: 0.5rem;
+  }
+  
+  table tbody td {
+    padding: 0.5rem;
+  }
+  
+  table tbody tr:nth-child(odd) {
+    background: #f3f3f3;
+  }
+  
+  footer {
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.9rem;
+  }
+  
+/* 기존 CSS 코드 */
+
+/* 미디어 쿼리 추가 */
+@media (max-width: 900px) {
+    nav ul {
+      flex-direction: column;
+    }
+    
+    nav ul li {
+      margin-bottom: 0.5rem;
+    }
+  
+    main {
+      margin: 1rem;
+    }
+    
+    section input[type="text"] {
+      width: 100%;
+    }
+  }
+    
